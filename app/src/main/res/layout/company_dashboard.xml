@@ -8,18 +8,17 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="336dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/edit_bg"
         android:ems="10"
-        android:gravity="center"
+        android:gravity="center|start"
         android:hint="Search By Company"
         android:inputType="textPersonName"
-        android:textColor="@color/white_color"
-        android:textColorHint="@color/black_color"
+        android:textColor="@color/black_color"
+        android:textColorHint="@color/gray_color"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,100 +26,504 @@
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="40dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/ic_search"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="395dp"
-        android:layout_height="587dp"
+        android:layout_width="0dp"
+        android:layout_height="581dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText">
+        app:layout_constraintTop_toBottomOf="@+id/GrayView">
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="600dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView1"
+                android:layout_width="0dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout">
+
+                <TextView
+                    android:id="@+id/CompanyName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:gravity="center"
+                    android:text="A to Z pvt ltd"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Reviewed1"
+                    android:layout_width="89dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="35sp"
+                    android:gravity="center|start"
+                    android:text="Reviewed  :"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Mr_Name1"
+                    android:layout_width="274dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="110sp"
+                    android:layout_marginTop="35sp"
+                    android:gravity="center|start"
+                    android:text="Mr.ABC"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="172dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="70sp"
+                    android:gravity="center|start"
+                    android:text="Date  "
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Time"
+                    android:layout_width="194dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="190sp"
+                    android:layout_marginTop="70sp"
+                    android:gravity="center|start"
+                    android:text="Time"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView2"
+                android:layout_width="0dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView1">
+
+                <TextView
+                    android:id="@+id/CompanyName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:gravity="center"
+                    android:text="A to Z pvt ltd"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Reviewed2"
+                    android:layout_width="89dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="35sp"
+                    android:gravity="center|start"
+                    android:text="Reviewed  :"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Mr_Name2"
+                    android:layout_width="274dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="110sp"
+                    android:layout_marginTop="35sp"
+                    android:gravity="center|start"
+                    android:text="Mr.ABC"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Date2"
+                    android:layout_width="172dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="70sp"
+                    android:gravity="center|start"
+                    android:text="Date  "
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Time2"
+                    android:layout_width="194dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="190sp"
+                    android:layout_marginTop="70sp"
+                    android:gravity="center|start"
+                    android:text="Time  "
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView3"
+                android:layout_width="0dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView2">
+
+                <TextView
+                    android:id="@+id/CompanyName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:gravity="center"
+                    android:text="A to Z pvt ltd"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Reviewed3"
+                    android:layout_width="89dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="35sp"
+                    android:gravity="center|start"
+                    android:text="Reviewed  :"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Mr_Name3"
+                    android:layout_width="274dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="110sp"
+                    android:layout_marginTop="35sp"
+                    android:gravity="center|start"
+                    android:text="Mr.ABC"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Date3"
+                    android:layout_width="192dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="70sp"
+                    android:gravity="center|start"
+                    android:text="Date  "
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Time3"
+                    android:layout_width="194dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="190sp"
+                    android:layout_marginTop="70sp"
+                    android:gravity="center|start"
+                    android:text="Time  "
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/ShowMoreTxtView"
+                android:layout_width="309dp"
+                android:layout_height="40sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="center|start"
+                android:text="Show more"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView3" />
+
+            <TextView
+                android:id="@+id/SearchDominTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="SEARCH BY DOMIN"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShowMoreTxtView" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="149dp"
+                android:layout_height="99dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_it" />
+
+                <TextView
+                    android:id="@+id/ItTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="IT"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="149dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.547"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_banking"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="Banking"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="149dp"
+                android:layout_height="99dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_ecommerce"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="E-Commerce"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="149dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_finance_markege"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="Finance &amp; Markege"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="149dp"
+                android:layout_height="99dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_telecom"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="Telecom"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="149dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toEndOf="@+id/cardView5"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_marketing"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="Marketing"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="149dp"
+                android:layout_height="113dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_logistics_supplychain"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="65sp"
+                    android:gravity="center"
+                    android:text="Logistics &amp; Supplychain"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="70dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/ShowMoreTxtView"
+                app:layout_constraintTop_toBottomOf="@+id/CardView3"
+                app:srcCompat="@drawable/ic_next"
+                tools:ignore="VectorDrawableCompat" />
+
+        </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="0dp"
-        android:layout_height="118dp"
+    <View
+        android:id="@+id/GrayView"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginRight="8dp"
+        android:background="@color/gray_color"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2">
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:gravity="center"
-            android:text="A to Z pvt ltd"
-            android:textColor="@color/black_color"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="89dp"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="35sp"
-            android:gravity="center|start"
-            android:text="Reviewed  :"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="274dp"
-            android:layout_height="30sp"
-            android:layout_marginLeft="110sp"
-            android:layout_marginTop="35sp"
-            android:gravity="center|start"
-            android:text="Mr.ABC"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="172dp"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="70sp"
-            android:gravity="center"
-            android:text="Date  :"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="194dp"
-            android:layout_height="30sp"
-            android:layout_marginLeft="190sp"
-            android:layout_marginTop="70sp"
-            android:gravity="center"
-            android:text="Time  :"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
-
-    </android.support.v7.widget.CardView>
 
 
 </android.support.constraint.ConstraintLayout>

@@ -32,4 +32,7 @@ dependencies {
 
     // CardView
     implementation 'com.android.support:cardview-v7:+'
+/////Bottom Navigation
+//    implementation 'com.google.android.material:material:1.0.0'
+
 }
