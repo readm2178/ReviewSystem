@@ -14,7 +14,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/edit_bg"
         android:ems="10"
-        android:gravity="center|start"
+        android:gravity="center"
         android:hint="Search By Company"
         android:inputType="textPersonName"
         android:textColor="@color/black_color"
@@ -33,22 +33,38 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="581dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+    <View
+        android:id="@+id/GrayView"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/gray_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GrayView">
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/BottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GrayView"
+        app:layout_constraintVertical_bias="0.0">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/ConstraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="600dp">
+            android:layout_height="match_parent">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/CardView1"
@@ -258,33 +274,67 @@
 
             </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/ShowMoreTxtView"
-                android:layout_width="309dp"
-                android:layout_height="40sp"
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:gravity="center|start"
-                android:text="Show more"
-                android:textColor="@color/black_color"
-                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/CardView3" />
+                app:layout_constraintTop_toBottomOf="@+id/CardView3">
+
+                <TextView
+                    android:id="@+id/ShowMoreTxtView"
+                    android:layout_width="292dp"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="5sp"
+                    android:gravity="center|start"
+                    android:text="   Show More"
+                    android:textColor="@color/black_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_next" />
+            </android.support.v7.widget.CardView>
 
             <TextView
                 android:id="@+id/SearchDominTxtView"
                 android:layout_width="match_parent"
-                android:layout_height="40sp"
+                android:layout_height="30sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center|start"
-                android:text="SEARCH BY DOMIN"
+                android:text="   SEARCH BY DOMIN "
                 android:textColor="@color/black_color"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ShowMoreTxtView" />
+                app:layout_constraintTop_toBottomOf="@+id/CardView4" />
+
+            <View
+                android:id="@+id/BlackView"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/blackgradient"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView" />
 
             <android.support.v7.widget.CardView
                 android:id="@+id/cardView"
@@ -293,7 +343,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView">
+                app:layout_constraintTop_toBottomOf="@+id/BlackView">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -307,7 +357,7 @@
                     android:layout_height="30sp"
                     android:layout_marginTop="65sp"
                     android:gravity="center"
-                    android:text="IT"
+                    android:text="IT  Services"
                     android:textColor="@color/black_color"
                     android:textSize="16sp" />
 
@@ -326,7 +376,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.547"
                 app:layout_constraintStart_toEndOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView">
+                app:layout_constraintTop_toBottomOf="@+id/BlackView">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -494,36 +544,22 @@
                     android:textSize="16sp" />
             </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="70dp"
-                android:layout_height="38dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/ShowMoreTxtView"
-                app:layout_constraintTop_toBottomOf="@+id/CardView3"
-                app:srcCompat="@drawable/ic_next"
-                tools:ignore="VectorDrawableCompat" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
-    <View
-        android:id="@+id/GrayView"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="8dp"
-        android:background="@color/gray_color"
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/white_color"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
