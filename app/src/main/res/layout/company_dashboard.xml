@@ -7,15 +7,17 @@
     app:barrierAllowsGoneWidgets="false">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/SearchByCompany"
         android:layout_width="312dp"
         android:layout_height="40dp"
+        android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
         android:layout_marginTop="30dp"
+        android:autofillHints=""
         android:background="@drawable/edit_bg"
         android:ems="10"
         android:gravity="center"
-        android:hint="Search By Company"
+        android:hint="@string/search_by_company"
         android:inputType="textPersonName"
         android:textColor="@color/black_color"
         android:textColorHint="@color/gray_color"
@@ -24,15 +26,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/SearchImageButton"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/ic_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/SearchByCompany"
         app:layout_constraintTop_toTopOf="parent" />
+
     <View
         android:id="@+id/GrayView"
         android:layout_width="wrap_content"
@@ -40,11 +43,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="8dp"
-        android:background="@color/gray_color"
+        android:background="@drawable/blackgradient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/SearchByCompany" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -52,11 +55,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/BottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GrayView"
         app:layout_constraintVertical_bias="0.0">
@@ -313,9 +318,9 @@
                 android:layout_height="30sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
                 android:gravity="center|start"
                 android:text="   SEARCH BY DOMIN "
                 android:textColor="@color/black_color"
@@ -325,7 +330,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/CardView4" />
 
             <View
-                android:id="@+id/BlackView"
+                android:id="@+id/BlackoneView"
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_marginLeft="8dp"
@@ -343,7 +348,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/BlackView">
+                app:layout_constraintTop_toBottomOf="@+id/BlackoneView">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -376,7 +381,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.547"
                 app:layout_constraintStart_toEndOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/BlackView">
+                app:layout_constraintTop_toBottomOf="@+id/BlackoneView">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -547,7 +552,6 @@
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
-
 
 
     <android.support.design.widget.BottomNavigationView
