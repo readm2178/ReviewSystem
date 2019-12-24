@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); // hide the title bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
-        setContentView(R.layout.add_review);
+        setContentView(R.layout.add_review_details);
 //sangeetha initial commit
 
         //hello
