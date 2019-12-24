@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Review System</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_emailid">Email ID</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_firstname">First Name</string>
+    <string name="txt_lastname">Last Name</string>
+    <string name="txt_phoneno">Phone No</string>
+    <string name="txt_step_2">Step 2</string>
+    <string name="txt_addreview">Add Review</string>
+
+
+
 </resources>
