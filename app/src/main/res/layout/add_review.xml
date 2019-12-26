@@ -79,7 +79,7 @@
                 app:layout_constraintVertical_bias="0.064" />
 
             <EditText
-                android:id="@+id/Firstname_editText"
+                android:id="@+id/FirstnameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -110,11 +110,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.032"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Firstname_editText"
+                app:layout_constraintTop_toBottomOf="@+id/FirstnameEditText"
                 app:layout_constraintVertical_bias="0.002" />
 
             <EditText
-                android:id="@+id/Lastname_editText"
+                android:id="@+id/LastnameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -126,7 +126,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Firstname_editText"
+                app:layout_constraintTop_toBottomOf="@+id/FirstnameEditText"
                 app:layout_constraintVertical_bias="0.039" />
 
             <TextView
@@ -144,11 +144,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Lastname_editText"
+                app:layout_constraintTop_toBottomOf="@+id/LastnameEditText"
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/Email_editText"
+                android:id="@+id/EmailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -161,7 +161,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Lastname_editText"
+                app:layout_constraintTop_toBottomOf="@+id/LastnameEditText"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -179,11 +179,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.047"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Email_editText"
-                app:layout_constraintVertical_bias="0.02" />
+                app:layout_constraintTop_toBottomOf="@+id/EmailEditText"
+                app:layout_constraintVertical_bias="0.02"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp" />
 
             <EditText
-                android:id="@+id/PhoneNo_editText"
+                android:id="@+id/PhoneNoEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -196,7 +198,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Email_editText"
+                app:layout_constraintTop_toBottomOf="@+id/EmailEditText"
                 app:layout_constraintVertical_bias="0.154" />
 
 
@@ -205,7 +207,7 @@
     </android.support.v7.widget.CardView>
 
     <Button
-        android:id="@+id/Btn_step2"
+        android:id="@+id/Step2Btn"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
@@ -219,5 +221,7 @@
         app:layout_constraintHorizontal_bias="0.973"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.042"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp" />
 </android.support.constraint.ConstraintLayout>
