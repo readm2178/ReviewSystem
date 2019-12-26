@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Review System</string>
-<<<<<<< Updated upstream
+<!--<<<<<<< Updated upstream-->
     <string name="previousimage">PreviousImage</string>
     <string name="add_review">Add Review</string>
     <string name="designation">Designation</string>
@@ -16,7 +16,27 @@
     <string name="login">Login</string>
     <string name="company">Company</string>
     <string name="employee">Employee</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="Email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="step_2">Step 2</string>
+    <string name="search_by_company">Search By Company</string>
+    <string name="it_services">IT Services</string>
+    <string name="banking">Banking</string>
+    <string name="telecom">Telecom</string>
+    <string name="marketing">Marketing</string>
+    <string name="logistics_amp_supplychain"><![CDATA[Logistics & Supplychain]]></string>
+    <string name="a_to_z_pvt_ltd">A to Z pvt ltd</string>
+    <string name="reviewed">Reviewed :</string>
+    <string name="mr_abc">Mr.ABC</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="show_more">Show More</string>
+    <string name="search_by_domin">SEARCH BY DOMIN</string>
+    <string name="e_commerce">E-Commerce</string>
+    <string name="finance_amp_markege"><![CDATA[Finance & Markege]]></string>
 
 
->>>>>>> Stashed changes
+    >>>>>>> Stashed changes
 </resources>
