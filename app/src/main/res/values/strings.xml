@@ -9,5 +9,17 @@
     <string name="weakness">Weakness</string>
     <string name="performance">Performance</string>
     <string name="overall_rating">Overall Rating</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="step_2">Step 2</string>
+    <string name="login_caps">LOGIN</string>
+    <string name="email">Email</string>
     <string name="submit">Submit</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email ID</string>
+    <string name="phone_no">Phone No</string>
+
 </resources>
