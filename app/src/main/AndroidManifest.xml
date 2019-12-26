@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Splash"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Employeeprofile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
