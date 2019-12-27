@@ -17,7 +17,7 @@
         android:background="@drawable/edit_bg"
         android:ems="10"
         android:gravity="center"
-        android:hint="search_by_company"
+        android:hint="@string/search_by_company"
         android:inputType="textPersonName"
         android:textColor="@color/black_color"
         android:textColorHint="@color/gray_color"
