@@ -29,7 +29,6 @@ public class AddReviewDetails extends AppCompatActivity {
         AddReview = (TextView)findViewById(R.id.AddReview);
         DesignationEditTxt = (EditText)findViewById(R.id.DesignationEditTxt);
         CurrentExpEditTxt = (EditText)findViewById(R.id.CurrentExpEditTxt);
-        PhoneNoEditText =(EditText)findViewById(R.id.PhoneNoEditText);
 //        StrengthEditTxt = (EditText)findViewById(R.id.StrengthEditTxt);
 //        WeaknessEditTxt =(EditText)findViewById(R.id.WeaknessEditTxt);
 //        PerformanceEditTxt =(EditText)findViewById(R.id.PerformanceEditTxt);

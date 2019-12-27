@@ -27,17 +27,12 @@ public class AddReview extends AppCompatActivity {
 
     private void initlize() {
 
-        Step2 = (Button)findViewById(R.id.Step2Btn);
-        AddReview = (TextView)findViewById(R.id.AddReview);
-        FirstName = (TextView)findViewById(R.id.FirstName);
-        LastName  = (TextView)findViewById(R.id.LastName);
-        Email = (TextView)findViewById(R.id.Email);
-        PhoneNo = (TextView)findViewById(R.id.PhoneNo);
+        Step2 = (Button)findViewById(R.id.NextStepBtn);
 
-        FirstnameEditText = (EditText)findViewById(R.id.FirstnameEditText);
-        LastnameEditText =(EditText)findViewById(R.id.LastnameEditText);
-        EmailEditText =(EditText)findViewById(R.id.EmailEditText);
-        PhoneNoEditText=(EditText)findViewById(R.id.PhoneNoEditText);
+        FirstnameEditText = (EditText)findViewById(R.id.FirstNameEditTxt);
+        LastnameEditText =(EditText)findViewById(R.id.LastNameEditTxt);
+        EmailEditText =(EditText)findViewById(R.id.EmailidEditTxt);
+        PhoneNoEditText=(EditText)findViewById(R.id.PhoneNoEditTxt);
     }
 
     private void onClick() {
