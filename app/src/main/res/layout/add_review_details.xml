@@ -41,7 +41,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/AddReviewCardView"
         android:layout_width="0dp"
-        android:layout_height="540dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
@@ -52,173 +52,239 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AddReview">
 
-        <TextView
+
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="20sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/designation"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
-        <EditText
-            android:id="@+id/DesignationEditTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="50sp"
-            android:layout_marginRight="10sp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/DesignationTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/designation"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="90sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/current_exp"
-            android:textColor="@color/black_color" />
+            <EditText
+                android:id="@+id/DesignationEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DesignationTxtView" />
 
-        <EditText
-            android:id="@+id/CurrentExpEditTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="120sp"
-            android:layout_marginRight="10sp"
-            android:ems="10"
-            android:inputType="number"
-            android:textColorHint="@color/gray_color"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/CurrentTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/current_exp"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DesignationEditTxt" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="160sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/previous_exp"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <EditText
+                android:id="@+id/CurrentExpEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CurrentTxtView" />
 
-        <EditText
-            android:id="@+id/PhoneNoEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="190sp"
-            android:layout_marginRight="10sp"
-            android:ems="10"
-            android:gravity="center|start"
-            android:inputType="number"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/PreviousExpTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/previous_exp"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CurrentExpEditTxt" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="230sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/strength"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <EditText
+                android:id="@+id/PreviousExpEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PreviousExpTxtView" />
 
-        <EditText
-            android:id="@+id/StrengthEditTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="260sp"
-            android:layout_marginRight="10sp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/StrengthTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/strength"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PreviousExpEditTxt" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="300sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/weakness"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <EditText
+                android:id="@+id/StrengthEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/StrengthTxtView" />
 
-        <EditText
-            android:id="@+id/WeaknessEditTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="330sp"
-            android:layout_marginRight="10sp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/WeaknessTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/weakness"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/StrengthEditTxt" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="370sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/performance"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <EditText
+                android:id="@+id/WeaknessEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WeaknessTxtView" />
 
-        <EditText
-            android:id="@+id/PerformanceEditTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="400sp"
-            android:layout_marginRight="10sp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/Performance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/performance"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/WeaknessEditTxt" />
 
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="465sp"
-            android:layout_marginRight="10sp"
-            android:outlineSpotShadowColor="@color/black_color" />
+            <EditText
+                android:id="@+id/PerformanceEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Performance" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="435sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center|start"
-            android:text="@string/overall_rating"
-            android:textColor="@color/black_color"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/OverallRatingTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center|start"
+                android:text="@string/overall_rating"
+                android:textColor="@color/black_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PerformanceEditTxt" />
 
-
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OverallRatingTxtView" />
+        </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
     <Button
         android:id="@+id/SubmiBtn"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="200sp"
+        android:layout_marginRight="13sp"
         android:background="@drawable/lightgreen_gradient"
         android:gravity="center"
         android:text="@string/submit"

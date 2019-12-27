@@ -24,7 +24,7 @@
     <string name="banking">Banking</string>
     <string name="telecom">Telecom</string>
     <string name="marketing">Marketing</string>
-    <string name="logistics_amp_supplychain"><![CDATA[Logistics & Supplychain]]></string>
+    <string name="logistics_amp_supplychain">Logistics &amp; Supplychain</string>
     <string name="a_to_z_pvt_ltd">A to Z pvt ltd</string>
     <string name="reviewed">Reviewed :</string>
     <string name="mr_abc">Mr.ABC</string>
@@ -33,6 +33,6 @@
     <string name="show_more">Show More</string>
     <string name="search_by_domin">SEARCH BY DOMIN</string>
     <string name="e_commerce">E-Commerce</string>
-    <string name="finance_amp_markege"><![CDATA[Finance & Markege]]></string>
+    <string name="finance_amp_markege">Finance &amp; Markege></string>
     <string name="password">Password</string>
 </resources>
