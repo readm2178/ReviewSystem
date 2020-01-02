@@ -31,8 +31,8 @@
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="show_more">Show More</string>
-    <string name="search_by_domin">SEARCH BY DOMIN</string>
     <string name="e_commerce">E-Commerce</string>
-    <string name="finance_amp_markege">Finance &amp; Markege></string>
+    <string name="finance_amp_markege">Finance &amp; Markege</string>
     <string name="password">Password</string>
+    <string name="search_by_domin">SEARCH BY DOMIN</string>
 </resources>

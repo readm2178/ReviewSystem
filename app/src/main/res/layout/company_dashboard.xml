@@ -6,526 +6,6 @@
     android:layout_height="match_parent"
     app:barrierAllowsGoneWidgets="false">
 
-    <EditText
-        android:id="@+id/SearchByCompany"
-        android:layout_width="312dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="30dp"
-        android:hint="@string/search_by_company"
-        android:background="@drawable/edit_bg"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:textColor="@color/black_color"
-        android:textColorHint="@color/gray_color"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:targetApi="o" />
-
-    <ImageButton
-        android:id="@+id/SearchImageButton"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/ic_search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/SearchByCompany"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/BlackView"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/blackgradient"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SearchByCompany" />
-
-    <ScrollView
-        android:id="@+id/SearchCompanyScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="605dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="14dp"
-        app:layout_constraintBottom_toTopOf="@+id/BottomNavigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BlackView"
-        app:layout_constraintVertical_bias="0.0">
-
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/ConstraintLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/CardView1"
-                android:layout_width="0dp"
-                android:layout_height="118dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:cardElevation="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/ConstraintLayout">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:gravity="center"
-                    android:text="@string/a_to_z_pvt_ltd"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="89dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginTop="35sp"
-                    android:gravity="center|start"
-                    android:text="@string/reviewed"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="274dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="110sp"
-                    android:layout_marginTop="35sp"
-                    android:gravity="center|start"
-                    android:text="@string/mr_abc"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="172dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginTop="70sp"
-                    android:gravity="center|start"
-                    android:text="@string/date"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="194dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="190sp"
-                    android:layout_marginTop="70sp"
-                    android:gravity="center|start"
-                    android:text="@string/time"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/CardView2"
-                android:layout_width="0dp"
-                android:layout_height="118dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:cardElevation="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/CardView1">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:gravity="center"
-                    android:text="@string/a_to_z_pvt_ltd"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="89dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginTop="35sp"
-                    android:gravity="center|start"
-                    android:text="@string/reviewed"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="274dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="110sp"
-                    android:layout_marginTop="35sp"
-                    android:gravity="center|start"
-                    android:text="@string/mr_abc"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="172dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginTop="70sp"
-                    android:gravity="center|start"
-                    android:text="@string/date"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="194dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="190sp"
-                    android:layout_marginTop="70sp"
-                    android:gravity="center|start"
-                    android:text="@string/time"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/CardView3"
-                android:layout_width="0dp"
-                android:layout_height="118dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:cardElevation="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/CardView2">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:gravity="center"
-                    android:text="@string/a_to_z_pvt_ltd"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="89dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginTop="35sp"
-                    android:gravity="center|start"
-                    android:text="@string/reviewed"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="274dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="110sp"
-                    android:layout_marginTop="35sp"
-                    android:gravity="center|start"
-                    android:text="@string/mr_abc"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="192dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginTop="70sp"
-                    android:gravity="center|start"
-                    android:text="@string/date"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="194dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="190sp"
-                    android:layout_marginTop="70sp"
-                    android:gravity="center|start"
-                    android:text="@string/time"
-                    android:textColor="@color/black_color"
-                    android:textSize="14sp" />
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/CardView4"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                app:cardElevation="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/CardView3">
-
-                <TextView
-                    android:layout_width="292dp"
-                    android:layout_height="30sp"
-                    android:layout_marginLeft="2sp"
-                    android:layout_marginTop="5sp"
-                    android:gravity="center|start"
-                    android:text="@string/show_more"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="300dp"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/ic_next" />
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:id="@+id/SearchDominTxtView"
-                android:layout_width="match_parent"
-                android:layout_height="30sp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:gravity="center|start"
-                android:text="@string/search_by_domin"
-                android:textColor="@color/black_color"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/CardView4" />
-
-            <View
-                android:id="@+id/BlackoneView"
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="18dp"
-                android:background="@drawable/blackgradient"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView" />
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="149dp"
-                android:layout_height="99dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/BlackoneView">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    android:src="@drawable/ic_it" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/it_services"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardView2"
-                android:layout_width="149dp"
-                android:layout_height="99dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.547"
-                app:layout_constraintStart_toEndOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/BlackoneView">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    app:srcCompat="@drawable/ic_banking"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/banking"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardView3"
-                android:layout_width="149dp"
-                android:layout_height="99dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="12dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    app:srcCompat="@drawable/ic_ecommerce"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/e_commerce"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardView4"
-                android:layout_width="149dp"
-                android:layout_height="99dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cardView3"
-                app:layout_constraintTop_toBottomOf="@+id/cardView2">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    app:srcCompat="@drawable/ic_finance_markege"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/finance_amp_markege"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardView5"
-                android:layout_width="149dp"
-                android:layout_height="99dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="12dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView3">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    app:srcCompat="@drawable/ic_telecom"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/telecom"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="149dp"
-                android:layout_height="99dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.508"
-                app:layout_constraintStart_toEndOf="@+id/cardView5"
-                app:layout_constraintTop_toBottomOf="@+id/cardView4">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    app:srcCompat="@drawable/ic_marketing"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="30sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/marketing"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="149dp"
-                android:layout_height="113dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="12dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView5">
-
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="4dp"
-                    app:srcCompat="@drawable/ic_logistics_supplychain"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="40sp"
-                    android:layout_marginTop="65sp"
-                    android:gravity="center"
-                    android:text="@string/logistics_amp_supplychain"
-                    android:textColor="@color/black_color"
-                    android:textSize="16sp" />
-            </android.support.v7.widget.CardView>
-
-
-        </android.support.constraint.ConstraintLayout>
-    </ScrollView>
-
-
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/BottomNavigation"
         android:layout_width="match_parent"
@@ -537,5 +17,739 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/SearchByCompany"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_bg"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/search_by_company"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/SearchImageButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/SearchImageButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toTopOf="@+id/BlackView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/BlackView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/blackgradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SearchByCompany" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/BottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlackView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/AtoZTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:text="@string/a_to_z_pvt_ltd"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/ReviewedTxtview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center|start"
+                        android:text="@string/reviewed"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/AtoZTxtView" />
+
+                    <TextView
+                        android:id="@+id/MrABCTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center|start"
+                        android:text="@string/mr_abc"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ReviewedTxtview"
+                        app:layout_constraintTop_toBottomOf="@+id/AtoZTxtView" />
+
+                    <TextView
+                        android:id="@+id/DateTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/date"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/TimeTxtView"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ReviewedTxtview"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/TimeTxtView"
+                        android:layout_width="211dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/time"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/MrABCTxtView"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView1">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/AtoZ1TxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:text="@string/a_to_z_pvt_ltd"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Reviewed1Txtview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center|start"
+                        android:text="@string/reviewed"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/AtoZ1TxtView" />
+
+                    <TextView
+                        android:id="@+id/MrABC1TxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center|start"
+                        android:text="@string/mr_abc"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Reviewed1Txtview"
+                        app:layout_constraintTop_toBottomOf="@+id/AtoZ1TxtView" />
+
+                    <TextView
+                        android:id="@+id/Date1TxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/date"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Time1TxtView"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Reviewed1Txtview"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/Time1TxtView"
+                        android:layout_width="211sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/time"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/MrABC1TxtView"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView2">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/AtoZ2TxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:text="@string/a_to_z_pvt_ltd"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/Reviewed2Txtview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center|start"
+                        android:text="@string/reviewed"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/AtoZ2TxtView" />
+
+                    <TextView
+                        android:id="@+id/MrABC2TxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center|start"
+                        android:text="@string/mr_abc"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/Reviewed2Txtview"
+                        app:layout_constraintTop_toBottomOf="@+id/AtoZ2TxtView" />
+
+                    <TextView
+                        android:id="@+id/Date2TxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/date"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Time2TxtView"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Reviewed2Txtview"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/Time2TxtView"
+                        android:layout_width="211sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/time"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/MrABC2TxtView"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView3">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ShowMoreTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center|start"
+                        android:text="@string/show_more"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@+id/NextImageButton"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/NextImageButton"
+                        android:layout_width="36dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/ic_next"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/SearchDominTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center|start"
+                android:text="@string/search_by_domin"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView4" />
+
+            <View
+                android:id="@+id/BlackView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/blackgradient"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SearchDominTxtView" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView5"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BlackView1">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ItImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:src="@drawable/ic_it"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/ItServicesTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/it_services"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ItImageView"
+                        app:layout_constraintVertical_bias="0.448" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView6"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/CardView5"
+                app:layout_constraintTop_toBottomOf="@+id/BlackView1">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/BankingImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="61dp"
+                        android:src="@drawable/ic_banking"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/BankingTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/banking"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/BankingImageView"
+                        app:layout_constraintVertical_bias="0.448" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView7"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView5">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/E-CommerceImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_ecommerce"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/E-CommerceTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/e_commerce"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/E-CommerceImageView"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView8"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toEndOf="@+id/CardView7"
+                app:layout_constraintTop_toBottomOf="@+id/CardView6">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/FinanceImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="60sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_finance_markege"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/FinanceTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/finance_amp_markege"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/FinanceImageView"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView9"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView7">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/TelecomImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="60sp"
+                        android:src="@drawable/ic_telecom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/TelecomTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/telecom"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TelecomImageView"
+                        app:layout_constraintVertical_bias="0.142" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView10"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/CardView9"
+                app:layout_constraintTop_toBottomOf="@+id/CardView8">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/MarketingImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="60sp"
+                        android:src="@drawable/ic_marketing"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/MarketingTxtView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/marketing"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/MarketingImageView"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView11"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView9">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/LogisticImageView"
+                        android:layout_width="0dp"
+                        android:layout_height="60sp"
+                        android:src="@drawable/ic_logistics_supplychain"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/LogisticTxtview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="@string/logistics_amp_supplychain"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LogisticImageView"
+                        app:layout_constraintVertical_bias="0.166" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

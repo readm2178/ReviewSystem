@@ -3,9 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-<<<<<<< Updated upstream
-    // Updated upstream
-=======
+<!--<<<<<<< Updated upstream-->
+    <!--// Updated upstream-->
+<!--=======-->
 <!--<<<<<<< Updated upstream-->
 >>>>>>> Stashed changes
     <color name="white_color">#ffffff</color>
@@ -21,7 +21,7 @@
 
     <color name="colorBlack">#000</color>
     <color name="flu">#3ecda8</color>
-<<<<<<< Updated upstream
+<!--<<<<<<< Updated upstream-->
     <color name="graycolor">#808080</color>
 =======
     <color name="dark_graycolor">#808080</color>
