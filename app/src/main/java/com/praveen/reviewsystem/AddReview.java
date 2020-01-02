@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 public class AddReview extends AppCompatActivity {
 
-    TextView AddReview,FirstName,LastName,Email,PhoneNo;
     EditText FirstnameEditText,LastnameEditText,EmailEditText,PhoneNoEditText;
     Button Step2;
 

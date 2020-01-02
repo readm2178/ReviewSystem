@@ -11,8 +11,8 @@ import android.widget.TextView;
 public class AddReviewDetails extends AppCompatActivity {
 
     TextView AddReview;
-    EditText DesignationEditTxt, CurrentExpEditTxt,PhoneNoEditText,StrengthEditTxt,WeaknessEditTxt,PerformanceEditTxt;
-    Button SubmiBtn;
+    EditText Designation, CurrentExp,PreviousExp,Strength,Weakness,Performance;
+    Button Submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +27,18 @@ public class AddReviewDetails extends AppCompatActivity {
     private void initialize() {
 
         AddReview = (TextView)findViewById(R.id.AddReview);
-        DesignationEditTxt = (EditText)findViewById(R.id.DesignationEditTxt);
-        CurrentExpEditTxt = (EditText)findViewById(R.id.CurrentExpEditTxt);
-//        StrengthEditTxt = (EditText)findViewById(R.id.StrengthEditTxt);
-//        WeaknessEditTxt =(EditText)findViewById(R.id.WeaknessEditTxt);
-//        PerformanceEditTxt =(EditText)findViewById(R.id.PerformanceEditTxt);
-        SubmiBtn =(Button)findViewById(R.id.SubmiBtn);
+        Designation = (EditText)findViewById(R.id.DesignationEditTxt);
+        CurrentExp = (EditText)findViewById(R.id.CurrentExpEditTxt);
+        PreviousExp =(EditText)findViewById(R.id.PreviousExpEditTxt);
+        Strength = (EditText)findViewById(R.id.StrengthEditTxt);
+        Weakness =(EditText)findViewById(R.id.WeaknessEditTxt);
+        Performance =(EditText)findViewById(R.id.PerformanceEditTxt);
+        Submit =(Button)findViewById(R.id.SubmiBtn);
     }
 
     private void onClick() {
 
-        SubmiBtn.setOnClickListener(new View.OnClickListener() {
+        Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(AddReviewDetails.this,CompanyDashboard.class);

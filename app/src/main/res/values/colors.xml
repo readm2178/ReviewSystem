@@ -13,16 +13,16 @@
     <color name="gray_color">#C2C5C2</color>
     <color name="lightgreen_color">#A1DB5F</color>
 
-    <color name="black">#000</color>
-    <color name="white">#fff</color>
+    <!--<color name="black">#000</color>-->
+    <!--<color name="white">#fff</color>-->
     <color name="darkgreen_color">#102F32</color>
 
 =======
 
-    <color name="colorBlack">#000</color>
-    <color name="flu">#3ecda8</color>
+    <!--<color name="colorBlack">#000</color>-->
+    <!--<color name="flu">#3ecda8</color>-->
 <!--<<<<<<< Updated upstream-->
-    <color name="graycolor">#808080</color>
+    <!--<color name="graycolor">#808080</color>-->
 =======
     <color name="dark_graycolor">#808080</color>
 >>>>>>> Stashed changes
