@@ -41,7 +41,7 @@ public class AddReviewDetails extends AppCompatActivity {
         Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(AddReviewDetails.this,CompanyDashboard.class);
+                Intent i = new Intent(AddReviewDetails.this,BottomNavigation.class);
                 startActivity(i);
             }
         });
