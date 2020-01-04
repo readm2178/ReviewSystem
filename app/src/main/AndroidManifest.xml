@@ -12,7 +12,7 @@
         <activity android:name=".Login"/>
         <activity android:name=".AddReview"/>
         <activity android:name=".AddReviewDetails"/>
-        <activity android:name=".CompanyDashboard"/>
+        <activity android:name=".BottomNavigation"/>
         <activity android:name=".MainActivity">
 
             <intent-filter>
