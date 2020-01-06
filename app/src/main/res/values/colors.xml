@@ -3,28 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    // Updated upstream
-=======
-<!--<<<<<<< Updated upstream-->
->>>>>>> Stashed changes
+
     <color name="white_color">#ffffff</color>
     <color name="black_color">#000000</color>
+    <color name="light_graycolor">#DCDCDC</color>
     <color name="gray_color">#C2C5C2</color>
-    <color name="lightgreen_color">#A1DB5F</color>
-
-    <color name="black">#000</color>
-    <color name="white">#fff</color>
-    <color name="darkgreen_color">#102F32</color>
-
-=======
-
-    <color name="colorBlack">#000</color>
-    <color name="flu">#3ecda8</color>
-    <color name="graycolor">#808080</color>
-=======
     <color name="dark_graycolor">#808080</color>
->>>>>>> Stashed changes
+
+    <color name="lightgreen_color">#A1DB5F</color>
+    <color name="darkgreen_color">#102F32</color>
     <color name="bluecolor">#009EFD</color>
     <color name="darkblue">#2e66cc</color>
->>>>>>> Stashed changes
+    <color name="orange_color">#FFA500</color>
 </resources>

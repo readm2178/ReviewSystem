@@ -19,15 +19,11 @@
     <string name="Email">Email</string>
     <string name="phone_number">Phone Number</string>
     <string name="step_2">Step 2</string>
-    <string name="search_by_company">Search By Company</string>
     <string name="it_services">IT Services</string>
     <string name="banking">Banking</string>
     <string name="telecom">Telecom</string>
     <string name="marketing">Marketing</string>
     <string name="logistics_amp_supplychain">Logistics &amp; Supplychain</string>
-    <string name="a_to_z_pvt_ltd">A to Z pvt ltd</string>
-    <string name="reviewed">Reviewed :</string>
-    <string name="mr_abc">Mr.ABC</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="show_more">Show More</string>
@@ -35,4 +31,7 @@
     <string name="finance_amp_markege">Finance &amp; Markege</string>
     <string name="password">Password</string>
     <string name="search_by_domin">SEARCH BY DOMIN</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="today">TODAY</string>
+    <string name="older">OLDER</string>
 </resources>
