@@ -3,250 +3,526 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
 
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="440dp"
-        android:layout_height="221dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        card_view:cardBackgroundColor="#ad33ff">
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/backarrow"
-                android:layout_width="29dp"
-                android:layout_height="28dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="26dp"
-                android:src="@drawable/ic_arrow_back_black"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/companyprofile"
-                android:layout_width="216dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginRight="100dp"
-                android:gravity="center"
-                android:text="Company Profile"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/backarrow"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <View
-                android:id="@+id/companyview"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/circle3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/companyprofile" />
-
-            <ImageView
-                android:id="@+id/companyimage"
-                android:layout_width="70dp"
-                android:layout_height="75dp"
-                android:src="@drawable/ic_manager_icon"
-                app:layout_constraintBottom_toBottomOf="@+id/companyview"
-                app:layout_constraintEnd_toEndOf="@+id/companyview"
-                app:layout_constraintStart_toStartOf="@+id/companyview"
-                app:layout_constraintTop_toTopOf="@+id/companyview" />
-
-            <TextView
-                android:id="@+id/compnayname"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="30dp"
-                android:gravity="left"
-                android:text="AmigaIT Technologies"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/companyview"
-                app:layout_constraintTop_toBottomOf="@+id/companyprofile" />
-
-            <TextView
-                android:id="@+id/industry"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="8dp"
-                android:text="Industry"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/companyview"
-                app:layout_constraintTop_toBottomOf="@+id/compnayname" />
-
-            <TextView
-                android:id="@+id/since"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:text="Since 2019"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                app:layout_constraintStart_toEndOf="@+id/companyview"
-                app:layout_constraintTop_toBottomOf="@+id/industry" />
-
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="320dp"
-        android:layout_height="400dp"
+    <View
+        android:id="@+id/CompanyprofileView"
+        android:layout_width="484dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:cardCornerRadius="5dp"
+        android:background="#cc9900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrowbackimage"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_left_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CompanyprofileView" />
+
+    <TextView
+        android:id="@+id/Companyprofiletext"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Company Profile"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/arrowbackimage"
+        app:layout_constraintTop_toTopOf="@+id/CompanyprofileView" />
+
+    <View
+        android:id="@+id/Companyprofileview"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/graygradient_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Companyprofiletext"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/Companyprofileimage"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Companyprofileview"
+        app:layout_constraintEnd_toEndOf="@+id/Companyprofileview"
+        app:layout_constraintStart_toStartOf="@+id/Companyprofileview"
+        app:layout_constraintTop_toTopOf="@+id/Companyprofileview"
+        android:src="@drawable/ic_manager_icon" />
+
+    <TextView
+        android:id="@+id/Companyname"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="left"
+        android:text="AmigaIT Technologies"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Companyprofileview"
+        app:layout_constraintTop_toBottomOf="@+id/Companyprofiletext"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Companyindustry"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Industry"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Companyprofileview"
+        app:layout_constraintTop_toBottomOf="@+id/Companyname" />
+
+    <TextView
+        android:id="@+id/Companyprofilesince"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Since 2019"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Companyprofileview"
+        app:layout_constraintTop_toBottomOf="@+id/Companyindustry" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/Companyprofileview"
+        app:layout_constraintVertical_bias="0.0">
 
-        <android.support.constraint.ConstraintLayout
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Companyprofilecardview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white_color">
 
-            <TextView
-                android:id="@+id/companyid"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="Company Id"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="Company Name"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/companyid" />
+                <View
+                    android:id="@+id/Companyidview"
+                    android:layout_width="271dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.313"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="Director"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+                <ImageView
+                    android:id="@+id/Companyidimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_companyid"
+                    app:layout_constraintBottom_toBottomOf="@+id/Companyidview"
+                    app:layout_constraintStart_toStartOf="@+id/Companyidview"
+                    app:layout_constraintTop_toTopOf="@+id/Companyidview" />
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="No.of Employees"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                <TextView
+                    android:id="@+id/companyidtext"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Company ID"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Companyidview"
+                    app:layout_constraintEnd_toEndOf="@+id/Companyidview"
+                    app:layout_constraintStart_toEndOf="@+id/Companyidimage"
+                    app:layout_constraintTop_toTopOf="@+id/Companyidview" />
 
-            <TextView
-                android:id="@+id/year"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="Established Year"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                <TextView
+                    android:id="@+id/Companyidnumber"
+                    android:layout_width="245dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_blue_right"
+                    android:gravity="center"
+                    android:text="ABCD151616516511"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Companyidview" />
 
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="Email"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/year" />
+                <View
+                    android:id="@+id/directorview"
+                    android:layout_width="271dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Companyidnumber" />
 
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="200dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="Website"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.374"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                <ImageView
+                    android:id="@+id/directimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_director"
+                    app:layout_constraintBottom_toBottomOf="@+id/directorview"
+                    app:layout_constraintStart_toStartOf="@+id/directorview"
+                    app:layout_constraintTop_toTopOf="@+id/directorview" />
 
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/director"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Director"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/directorview"
+                    app:layout_constraintEnd_toEndOf="@+id/directorview"
+                    app:layout_constraintStart_toEndOf="@+id/directimage"
+                    app:layout_constraintTop_toTopOf="@+id/directorview" />
+
+                <TextView
+                    android:id="@+id/Directorname"
+                    android:layout_width="243dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_blue_right"
+                    android:gravity="center"
+                    android:text="AmigaIT Technologies"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.448"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/director" />
+
+                <View
+                    android:id="@+id/Emailview"
+                    android:layout_width="273dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.363"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Directorname"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/Emailimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_email"
+                    app:layout_constraintBottom_toBottomOf="@+id/Emailview"
+                    app:layout_constraintStart_toStartOf="@+id/Emailview"
+                    app:layout_constraintTop_toTopOf="@+id/Emailview" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Email"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Emailview"
+                    app:layout_constraintEnd_toEndOf="@+id/Emailview"
+                    app:layout_constraintStart_toEndOf="@+id/Emailimage"
+                    app:layout_constraintTop_toTopOf="@+id/Emailview" />
+
+                <TextView
+                    android:id="@+id/Emailid"
+                    android:layout_width="249dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_blue_right"
+                    android:gravity="center"
+                    android:text="info@amigaittechnologies.com"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emailview" />
+
+                <View
+                    android:id="@+id/Websiteview"
+                    android:layout_width="267dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Emailid" />
+
+                <ImageView
+                    android:id="@+id/websiteimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_website"
+                    app:layout_constraintBottom_toBottomOf="@+id/Websiteview"
+                    app:layout_constraintStart_toStartOf="@+id/Websiteview"
+                    app:layout_constraintTop_toTopOf="@+id/Websiteview" />
+
+                <TextView
+                    android:id="@+id/Website"
+                    android:layout_width="209dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Website"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Websiteview"
+                    app:layout_constraintEnd_toEndOf="@+id/Websiteview"
+                    app:layout_constraintStart_toEndOf="@+id/websiteimage"
+                    app:layout_constraintTop_toTopOf="@+id/Websiteview" />
+
+                <TextView
+                    android:id="@+id/Websitename"
+                    android:layout_width="251dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_blue_right"
+                    android:gravity="center"
+                    android:text="www.amigaitetechno.com"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Websiteview" />
+
+                <View
+                    android:id="@+id/No.ofemployeeview"
+                    android:layout_width="268dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.32"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Websitename" />
+
+                <ImageView
+                    android:id="@+id/numberimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_number"
+                    app:layout_constraintBottom_toBottomOf="@+id/No.ofemployeeview"
+                    app:layout_constraintStart_toStartOf="@+id/No.ofemployeeview"
+                    app:layout_constraintTop_toTopOf="@+id/No.ofemployeeview" />
+
+                <TextView
+                    android:id="@+id/Employeecount"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="No. of Employees"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/No.ofemployeeview"
+                    app:layout_constraintEnd_toEndOf="@+id/No.ofemployeeview"
+                    app:layout_constraintStart_toEndOf="@+id/numberimage"
+                    app:layout_constraintTop_toTopOf="@+id/No.ofemployeeview" />
+
+                <TextView
+                    android:id="@+id/Totalcount"
+                    android:layout_width="251dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_blue_right"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/No.ofemployeeview" />
+
+                <View
+                    android:id="@+id/Establishyearview"
+                    android:layout_width="266dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gradient_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.31"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Totalcount" />
+
+                <ImageView
+                    android:id="@+id/Establishedyearimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_number"
+                    app:layout_constraintBottom_toBottomOf="@+id/Establishyearview"
+                    app:layout_constraintStart_toStartOf="@+id/Establishyearview"
+                    app:layout_constraintTop_toTopOf="@+id/Establishyearview" />
+
+                <TextView
+                    android:id="@+id/Establishedyear"
+                    android:layout_width="211dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Established Year"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Establishyearview"
+                    app:layout_constraintEnd_toEndOf="@+id/Establishyearview"
+                    app:layout_constraintStart_toEndOf="@+id/Establishedyearimage"
+                    app:layout_constraintTop_toTopOf="@+id/Establishyearview" />
+
+                <TextView
+                    android:id="@+id/Year"
+                    android:layout_width="255dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/gradient_blue_right"
+                    android:gravity="center"
+                    android:text="2019"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/Companyprofilecardview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Establishyearview"
+                    tools:ignore="NotSibling" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+
+
 
 
 </android.support.constraint.ConstraintLayout>
