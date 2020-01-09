@@ -54,7 +54,6 @@
             android:id="@+id/ImageView_Arrow"
             android:layout_width="30dp"
             android:layout_height="137dp"
-            android:layout_margin="0dp"
             android:src="@drawable/ic_left_arrow"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
@@ -225,7 +224,7 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintHorizontal_bias="0.716"
             app:layout_constraintStart_toStartOf="parent" />
 
 
