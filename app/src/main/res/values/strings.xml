@@ -18,7 +18,7 @@
     <string name="last_name">Last Name</string>
     <string name="Email">Email</string>
     <string name="phone_number">Phone Number</string>
-    <string name="step_2">Step 2</string>
+    <string name="next">Next</string>
     <string name="it_services">IT Services</string>
     <string name="banking">Banking</string>
     <string name="telecom">Telecom</string>
@@ -34,4 +34,5 @@
     <string name="notifications">NOTIFICATIONS</string>
     <string name="today">TODAY</string>
     <string name="older">OLDER</string>
+    <string name="title_activity_employee_bottom_navigation">EmployeeBottomNavigation</string>
 </resources>

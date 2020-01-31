@@ -39,5 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Company);
             }
         });
+        EmployeeLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Employee = new Intent(MainActivity.this, EmployeeLogin.class);
+                startActivity(Employee);
+            }
+        });
     }
 }

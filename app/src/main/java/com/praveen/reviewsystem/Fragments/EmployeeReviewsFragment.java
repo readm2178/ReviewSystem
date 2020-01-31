@@ -10,11 +10,12 @@ import android.view.ViewGroup;
 
 import com.praveen.reviewsystem.R;
 
-public class MyProfileFragment extends Fragment {
+public class EmployeeReviewsFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.company_profile,container,false);
+        return inflater.inflate(R.layout.employee_profile,container,false);
     }
+
 }

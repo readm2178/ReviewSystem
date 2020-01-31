@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent AddReview = new Intent(Login.this, AddReview.class);
+                Intent AddReview = new Intent(Login.this, BottomNavigation.class);
                 startActivity(AddReview);
             }
         });

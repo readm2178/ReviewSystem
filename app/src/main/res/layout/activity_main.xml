@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/navyblue_color"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,13 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="@string/select_account_type"
-        android:textColor="@color/black_color"
+        android:textColor="@color/white_color"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,12 +43,12 @@
         android:layout_height="100dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_employee1"
         app:layout_constraintBottom_toBottomOf="@+id/ViewProfile1"
         app:layout_constraintEnd_toEndOf="@+id/ViewProfile1"
         app:layout_constraintStart_toStartOf="@+id/ViewProfile1"
         app:layout_constraintTop_toTopOf="@+id/ViewProfile1"
-        app:layout_constraintVertical_bias="0.4"
-        android:src="@drawable/ic_employee1" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/CompanyLoginButton"
@@ -78,7 +77,7 @@
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:text="@string/company"
-        android:textColor="@color/black_color"
+        android:textColor="@color/white_color"
         android:textSize="16sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,13 +137,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:gravity="center"
         android:text="@string/employee"
-        android:textColor="@color/black_color"
+        android:textColor="@color/white_color"
         android:textSize="16sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
