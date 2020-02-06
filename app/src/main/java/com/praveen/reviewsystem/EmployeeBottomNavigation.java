@@ -26,7 +26,7 @@ public class EmployeeBottomNavigation extends AppCompatActivity {
 
     private void initialize() {
         EmployeeBottomNavigation =(BottomNavigationView)findViewById(R.id.EmployeeBottomNavigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.EmployeeFragment,new EmployeeProfileFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.EmployeeFragment,new EmployeeReviewsFragment()).commit();
         return;
 
     }

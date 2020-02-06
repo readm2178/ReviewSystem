@@ -15,7 +15,7 @@ public class EmployeeReviewsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.employee_profile,container,false);
+        return inflater.inflate(R.layout.employee_review_page,container,false);
     }
 
 }
