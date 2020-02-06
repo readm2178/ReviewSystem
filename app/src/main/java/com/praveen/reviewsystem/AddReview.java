@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class AddReview extends AppCompatActivity {
 
     EditText FirstnameEditText,LastnameEditText,EmailEditText,PhoneNoEditText;
-    Button Step2;
+    Button NextBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class AddReview extends AppCompatActivity {
 
     private void initlize() {
 
-        Step2 = (Button)findViewById(R.id.NextStepBtn);
+        NextBtn = (Button)findViewById(R.id.NextBtn);
 
         FirstnameEditText = (EditText)findViewById(R.id.FirstNameEditTxt);
         LastnameEditText =(EditText)findViewById(R.id.LastNameEditTxt);
@@ -36,10 +36,11 @@ public class AddReview extends AppCompatActivity {
 
     private void onClick() {
 
-        Step2.setOnClickListener(new View.OnClickListener() {
+        NextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AddReview.this,AddReviewDetails.class);
+
                 startActivity(intent);
             }
         });

@@ -28,7 +28,7 @@ public class PostAReviewFragment extends Fragment {
 
    public void onStart(){
         super.onStart();
-        NextStepBtn =(Button)context.findViewById(R.id.NextStepBtn);
+        NextStepBtn =(Button)context.findViewById(R.id.NextBtn);
 
         onClick();
    }

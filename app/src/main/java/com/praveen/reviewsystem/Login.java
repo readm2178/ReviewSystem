@@ -43,4 +43,8 @@ public class Login extends AppCompatActivity {
             }
         });
     }
+
+    public TextInputEditText getEmail() {
+        return Email;
+    }
 }

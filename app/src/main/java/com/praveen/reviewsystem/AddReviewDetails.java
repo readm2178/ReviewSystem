@@ -26,11 +26,10 @@ public class AddReviewDetails extends AppCompatActivity {
 
     private void initialize() {
 
-        AddReview = (TextView)findViewById(R.id.AddReview);
-        Designation = (EditText)findViewById(R.id.DesignationEditTxt);
-        CurrentExp = (EditText)findViewById(R.id.CurrentExpEditTxt);
-        PreviousExp =(EditText)findViewById(R.id.PreviousExpEditTxt);
-        Strength = (EditText)findViewById(R.id.StrengthEditTxt);
+        Designation = (EditText)findViewById(R.id.FirstNameEditTxt);
+        CurrentExp = (EditText)findViewById(R.id.LastNameEditTxt);
+        PreviousExp =(EditText)findViewById(R.id.EmailidEditTxt);
+        Strength = (EditText)findViewById(R.id.PhoneNoEditTxt);
         Weakness =(EditText)findViewById(R.id.WeaknessEditTxt);
         Performance =(EditText)findViewById(R.id.PerformanceEditTxt);
         Submit =(Button)findViewById(R.id.SubmiBtn);

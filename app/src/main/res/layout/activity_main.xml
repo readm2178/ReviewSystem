@@ -28,19 +28,16 @@
         android:id="@+id/ViewProfile1"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/bluegradient_circle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Account" />
 
     <ImageView
         android:id="@+id/CompanyImage"
         android:layout_width="95dp"
-        android:layout_height="100dp"
+        android:layout_height="95dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/ic_employee1"
@@ -50,58 +47,38 @@
         app:layout_constraintTop_toTopOf="@+id/ViewProfile1"
         app:layout_constraintVertical_bias="0.4" />
 
-    <Button
-        android:id="@+id/CompanyLoginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/whitegradient"
-        android:gravity="center"
-        android:text="@string/login"
-        android:textAllCaps="false"
-        android:textColor="@color/black_color"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toEndOf="@+id/CompanyImage"
-        app:layout_constraintTop_toBottomOf="@+id/Account" />
-
     <TextView
         android:id="@+id/CompanyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="@string/company"
         android:textColor="@color/white_color"
         android:textSize="16sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ViewProfile1" />
+
 
     <View
         android:id="@+id/ViewProfile2"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/bluegradient_circle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CompanyText" />
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toEndOf="@+id/ViewProfile1"
+        app:layout_constraintTop_toBottomOf="@+id/Account" />
 
     <ImageView
         android:id="@+id/EmployeeImage"
-        android:layout_width="98dp"
-        android:layout_height="95dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/ViewProfile2"
@@ -111,44 +88,61 @@
         app:srcCompat="@drawable/ic_manager_icon"
         tools:ignore="VectorDrawableCompat" />
 
-    <Button
-        android:id="@+id/EmployeeLoginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/whitegradient"
-        android:gravity="center"
-        android:text="@string/login"
-        android:textAllCaps="false"
-        android:textColor="@color/black_color"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/EmployeeImage"
-        app:layout_constraintTop_toBottomOf="@+id/CompanyText"
-        app:layout_constraintVertical_bias="0.047" />
-
     <TextView
         android:id="@+id/EmployeeTxtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
         android:gravity="center"
         android:text="@string/employee"
         android:textColor="@color/white_color"
         android:textSize="16sp"
         android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewProfile2" />
+
+    <View
+        android:id="@+id/ViewProfile3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/bluegradient_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewProfile2"
-        app:layout_constraintVertical_bias="0.066" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/FresherImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ViewProfile3"
+        app:layout_constraintEnd_toEndOf="@+id/ViewProfile3"
+        app:layout_constraintStart_toStartOf="@+id/ViewProfile3"
+        app:layout_constraintTop_toTopOf="@+id/ViewProfile3"
+        app:srcCompat="@drawable/ic_manager_icon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/FresherTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/fresher"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewProfile3"
+        app:layout_constraintVertical_bias="0.077" />
 </android.support.constraint.ConstraintLayout>

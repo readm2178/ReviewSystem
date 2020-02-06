@@ -7,10 +7,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button CompanyLogin,EmployeeLogin;
+    ImageView CompanyImage,EmployeeImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void initialize() {
 
-        CompanyLogin = (Button)findViewById(R.id.CompanyLoginButton);
-        EmployeeLogin = (Button)findViewById(R.id.EmployeeLoginButton);
+        CompanyImage = (ImageView) findViewById(R.id.CompanyImage);
+        EmployeeImage= (ImageView) findViewById(R.id.EmployeeImage);
     }
 
     private void onClick() {
 
-        CompanyLogin.setOnClickListener(new View.OnClickListener() {
+        CompanyImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(Company);
             }
         });
-        EmployeeLogin.setOnClickListener(new View.OnClickListener() {
+        EmployeeImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent Employee = new Intent(MainActivity.this, EmployeeLogin.class);
